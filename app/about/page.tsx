@@ -1,0 +1,5 @@
+import type {Metadata} from "next";import Scene from "@/components/Scene";
+export const metadata:Metadata={title:"About",description:"The studio’s approach to architecture."};
+export default function Page(){return(<section className="pt-36 pb-28"><div className="wrap"><h1 className="display text-[clamp(3.5rem,9vw,4rem)] max-w-5xl">Built on Trust. Growing with Purpose.</h1>
+<div className="mt-16 grid gap-12 lg:grid-cols-12"><div className="lg:col-span-5 aspect-[4/5] overflow-hidden"><Scene seed={28} label="Hillside villa" className="h-full w-full"/></div>
+<div className="lg:col-span-6 lg:col-start-7 space-y-6 leading-[1.8] text-graphite"><p>Real estate is no longer just about building, It is about ecosystems that shape how cities grow.</p><p>Chennai-based since 2011, Sai Shelters has grown through a commitment to quality construction, thoughtful development and lasting relationships.</p><p> With over a decade of experience, we continue to shape spaces that bring value, purpose and quality to life.</p><p></p><p><strong><em>Sai Shelters — Building Beyond Expectations.</em></strong></p></div></div></div></section>)}

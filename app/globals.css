@@ -1,0 +1,14 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+html{scroll-behavior:smooth}
+body{--font:"Poppins";background:#F7F6F2;color:#20211F;font-family:var(--font),Poppins,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+:focus-visible{outline:2px solid #48564A;outline-offset:3px}
+.wrap{max-width:1360px;margin:0 auto;padding-inline:clamp(20px,4vw,56px)}
+.display,.hd{font-family:var(--font),Poppins,system-ui,sans-serif;font-weight:300;letter-spacing:-.03em;line-height:1.08}
+.display em,.hd em{font-style:normal;font-weight:700}
+.eyebrow{font-size:12px;font-weight:500;letter-spacing:.2em;text-transform:uppercase}
+@keyframes marquee{to{transform:translateX(-50%)}}
+.marquee{display:flex;width:max-content;animation:marquee 60s linear infinite}
+.marquee:hover{animation-play-state:paused}
+.link{position:relative;font-size:13px;font-weight:600;letter-spacing:.04em;padding-bottom:4px;border-bottom:1px solid #20211F;transition:color .2s,border-color .2s}
+.link:hover{color:#48564A;border-color:#48564A}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
